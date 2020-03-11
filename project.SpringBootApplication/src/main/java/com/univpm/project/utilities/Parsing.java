@@ -20,7 +20,7 @@ public class Parsing {
 		JSONObject objI = (JSONObject) (obj.get("result"));
 	    objA = (JSONArray) (objI.get("resources")); 
 	}
-	
+	//andiamo a prendere la sezione 1 che ci interessa
 	public void createJSON() throws Exception{
 		boolean app=false; 
 		for(Object o : objA){
@@ -37,7 +37,7 @@ public class Parsing {
 		    }
 		}
 	}
-	
+	//una volta preso 1 (JSON) prendo url nella sottosezione e scarico dati relativi alle farmacie.
 	public static void download(String url, String fileName) throws Exception {
 		    
 	        try(InputStream in = URI.create(url).toURL().openStream()){
