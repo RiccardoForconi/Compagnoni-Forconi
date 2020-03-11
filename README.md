@@ -1,7 +1,25 @@
 # Farmacie - Progetto creato da Marco Compagnoni e Riccardo Forconi
 Repository per progetto del corso di Programmazione a oggetti
 
-Compagnoni-Forconi/project.SpringBootApplication/src/main/java/com/univpm/project/.
+# Obbiettivi del programma
+1) Andando a prendere il data-set fornito alla consegna dobbiamo collegarci al relativo URL. Il formato in cui troveremo 
+i dati all'interno del programma sarà in formato JSON.
+2) Andare a scaricare il contenuto del testo all'interno dell'URL in una stringa nel nostro programma.
+3) Andiamo a prendere soltanto il campo 1: in resources, in particolare l'URL di quest'ultimo, alla quale 
+dobbiamo collegarci per andare a prendere le info relative a tutte le farmacie presenti in Campania. Queste info
+saranno presenti in formato JSON e, così come sono, le portiamo all'interno di un file di testo.
+4) Andando a riprendere il file con le info andiamo a salvare ogni farmacia in un oggetto che, intuitivamente, 
+chiameremo "Farmacia" all'interno del file "Farmacia.java" che descriveremo poi.
+5) In farmacia andiamo a impostare i metodi che permettono il cambiamento e il reperimento delle informazioni
+relative ad ogni farmacia, andando quindi a definire le basi per eventuali filtri di ricerca e modifiche.
+6) Andiamo a costruire un'applicazione (main) che ci permette effettivamente di costruire un vettore di oggetti di
+farmacie. Su di esso creeremo poi un menù che permetterà:
+- la modifica delle informazioni relative alla farmacia
+- la ricerca della farmacia anche attraverso l'impostazione di diversi filtri.
+7) Andiamo a simulare un comportamento di un'eventuale applicazione web basata sull'applicazione costruita fino ad ora
+utilizzando SpringBoot e Postman.
+
+# Compagnoni-Forconi/project.SpringBootApplication/src/main/java/com/univpm/project/.
 all'interno di questo percorso troviamo tutte i file relativi al progetto sviluppato.
 
 ### "SpringBootApplication" folder
