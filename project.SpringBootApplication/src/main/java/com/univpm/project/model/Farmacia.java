@@ -1,3 +1,5 @@
+//classe finalizzata alla creazione di oggetti
+
 package com.univpm.project.model;
 
 public class Farmacia {
@@ -28,7 +30,7 @@ public class Farmacia {
 			
 		
 		//Costruttore
-		
+		//sarebbe utile creare un oggetto che incapsuli il tutto
 		public Farmacia(String codId, String codASL, String indirizzo, String descrizione, String partitaIVA, String cap,
 				String codcomuneIstat, String descrizioneCom, String frazione, String codprovIstat, String siglaProvincia,
 				String descrizioneProv, String datafineval, String descrizioneTipologia, String codiceTipologia,
