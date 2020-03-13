@@ -37,7 +37,8 @@ public class Parsing {
 		    }
 		}
 	}
-	//una volta preso 1 (JSON) prendo url nella sottosezione e scarico dati relativi alle farmacie.
+	//una volta preso 1 (JSON) prendo url nella sottosezione e scarico dati relativi alle farmacie
+	// all'interno di un file con un nome che passiamo all'interno dei parametri del metodo.
 	public static void download(String url, String fileName) throws Exception {
 		    
 	        try(InputStream in = URI.create(url).toURL().openStream()){
