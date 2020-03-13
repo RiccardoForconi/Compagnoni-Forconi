@@ -36,6 +36,7 @@ public class Connection {
 				   InputStreamReader inR = new InputStreamReader( in );
 				   BufferedReader buf = new BufferedReader( inR );
 				  
+ 				   // BufferedReader buf = new BufferedReader( new InputStreamReader( in ) );
 				   while ( ( line = buf.readLine() ) != null ) {
 					   data+= line;
 				   }
@@ -44,10 +45,13 @@ public class Connection {
 				 }
 			} catch (MalformedURLException e) {
 				// Implementare la gestione dell'eccezione
-			    System.out.println("Errore nell'Url");
+			    System.out.println("Errore di connessione");
+			    this.startConnection();
 			} catch (IOException e) {
 				//Implemenatare...
-				System.out.println("Errore in connection");
+				System.out.println("Errore di I/O");
+				this.startConnection();
 			}
 		   }
 }
+
