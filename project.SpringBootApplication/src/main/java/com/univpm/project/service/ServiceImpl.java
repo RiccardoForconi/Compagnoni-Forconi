@@ -18,8 +18,9 @@ public class ServiceImpl implements Service{
 		     Parsing parser=new Parsing(connect.getData());
 		     parser.createJSON();
 		     CreaStruct struct = new CreaStruct();
-		     datas = struct.read();
-/*
+	   	     struct.read();
+	   	     datas = struct.getDati();
+/* 
 		     CreaStruct dati=new CreaStruct();
 		     dati.read();
 */
@@ -29,6 +30,7 @@ public class ServiceImpl implements Service{
 	}
 
 	public abstract JSONArray getFarmacie(){
+		//classe per trasformazione string -> JSONObject
 		Gson g = new Gson();
 		String str = new String();
 		JSONArray arr = new JSONArray();
@@ -36,8 +38,11 @@ public class ServiceImpl implements Service{
 		JSONObject obj = new JSONObject();
 		for(Farmacia farm:datas)
 		{
+			//Farmacia to String
 			str = g.toJson(farm);
+			//creo JSONObject
 			obj = (JSONObject) parser.parse(str);
+			//aggiungo oggetto a JSONArray
 			arr.add(obj);
 		}
 	}
@@ -45,7 +50,8 @@ public class ServiceImpl implements Service{
 	public abstract JSONArray getMetadata(){
 		
 	}
-
+	
+	//all'interno di find è presente una farmacia
 	public abstract JSONArray getFarmacie(String find){
 		
 	}
