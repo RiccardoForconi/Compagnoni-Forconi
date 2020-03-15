@@ -1,34 +1,24 @@
-package com.univpm.project.model;
+package it.univpm.progettoSpringBootApp.model;
 
 public class Farmacia {
-	
 	//Attributi della classe
-		// gli ID non dovrebbero essere in int?
-		//int
+	
 		private String codId;
-		//int
 		private String codASL;
 		private String indirizzo;
 		private String descrizione;
-		//int
 		private String partitaIVA;
-		//int
 		private String cap;
-		//int
 		private String codcomuneIstat;
 		private String descrizioneCom;
 		private String frazione;
-		//int
 		private String codprovIstat;
 		private String siglaProvincia;
 		private String descrizioneProv;
 		private String datafineval;
 		private String descrizioneTipologia;
-		//int
 		private String codiceTipologia;
-		//double
 		private String latitudine;
-		//double
 		private String longitudine;
 		
 		//Costruttore di default
@@ -61,9 +51,6 @@ public class Farmacia {
 			this.latitudine = latitudine;
 			this.longitudine = longitudine;
 		}
-
-
-	    
 
 		//Override di ToString
 		
@@ -313,7 +300,4 @@ public class Farmacia {
 		public void setLongitudine(String longitudine) {
 			this.longitudine = longitudine;
 		}
-
-
 }
-
